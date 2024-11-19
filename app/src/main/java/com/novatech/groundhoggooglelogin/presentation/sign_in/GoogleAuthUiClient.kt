@@ -67,7 +67,7 @@ class GoogleAuthUiClient(
         )
     }
 
-    suspend private fun signOut() {
+    suspend fun signOut() {
         try{
             oneTapClient.signOut().await()
             auth.signOut()
